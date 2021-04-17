@@ -3,7 +3,7 @@ const path = require('path');
 //ROUTING HTMLS
 module.exports = (app) => {
 
-    app.get('/home', (req, res) => {
+    app.get('/', (req, res) => {
         res.sendFile(path.join(__dirname, '../public/index.html'));
     });
 
